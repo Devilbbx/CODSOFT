@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -23,8 +23,34 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile Picture">
-            <p>Hello! I'm Devendra Chapagain, a web developer with a passion for creating beautiful and functional websites. I specialize in HTML, CSS, and JavaScript.</p>
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGZhY2V8ZW58MHx8MHx8fDA%3D" alt="Devendra Photo">
+                <div class="welcome-class"> <h1> Welcome to my portfoilo</h1></div>
+                <div class="info-me">
+                    <p>I am Devendra Chapagain, a passionate web developer and UI/UX designer dedicated to creating visually appealing and user-friendly websites. With a keen interest in technology and creativity, I have worked on various projects to enhance my skills and gain hands-on experience. I aim to contribute to innovative solutions and am always eager to take on new challenges in the tech industry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <div style="border-radius: 12%; padding: 12px 8px; margin: 2%;">
+        <button>Download CV</button>
+    </div>
+    <div class="btn-hireme">
+        <button>Hire me</button>
+    </div>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="image-container">
+                <img src="https://th.bing.com/th/id/R.7dfcb5377c2c8b1a1f60e2a91523e620?rik=J0CYf2iDw3t9tw&riu=http%3a%2f%2fimages.all-free-download.com%2fimages%2fgraphiclarge%2fhtml_5_vector_logo_148263.jpg&ehk=%2fCk0a88RbXrtpOZ0kZkjPQQJFKFos8iiT5TgeYQVLE4%3d&risl=&pid=ImgRaw&r=0" alt="HTML">
+                <img src="https://th.bing.com/th/id/R.7dfcb5377c2c8b1a1f60e2a91523e620?rik=J0CYf2iDw3t9tw&riu=http%3a%2f%2fimages.all-free-download.com%2fimages%2fgraphiclarge%2fhtml_5_vector_logo_148263.jpg&ehk=%2fCk0a88RbXrtpOZ0kZkjPQQJFKFos8iiT5TgeYQVLE4%3d&risl=&pid=ImgRaw&r=0" alt="HTML">
+                <img src="https://th.bing.com/th/id/R.7dfcb5377c2c8b1a1f60e2a91523e620?rik=J0CYf2iDw3t9tw&riu=http%3a%2f%2fimages.all-free-download.com%2fimages%2fgraphiclarge%2fhtml_5_vector_logo_148263.jpg&ehk=%2fCk0a88RbXrtpOZ0kZkjPQQJFKFos8iiT5TgeYQVLE4%3d&risl=&pid=ImgRaw&r=0" alt="HTML">
+                <img src="https://th.bing.com/th/id/R.7dfcb5377c2c8b1a1f60e2a91523e620?rik=J0CYf2iDw3t9tw&riu=http%3a%2f%2fimages.all-free-download.com%2fimages%2fgraphiclarge%2fhtml_5_vector_logo_148263.jpg&ehk=%2fCk0a88RbXrtpOZ0kZkjPQQJFKFos8iiT5TgeYQVLE4%3d&risl=&pid=ImgRaw&r=0" alt="HTML">
+                <img src="https://th.bing.com/th/id/R.7dfcb5377c2c8b1a1f60e2a91523e620?rik=J0CYf2iDw3t9tw&riu=http%3a%2f%2fimages.all-free-download.com%2fimages%2fgraphiclarge%2fhtml_5_vector_logo_148263.jpg&ehk=%2fCk0a88RbXrtpOZ0kZkjPQQJFKFos8iiT5TgeYQVLE4%3d&risl=&pid=ImgRaw&r=0" alt="Figma">
+            </div>
         </div>
     </section>
 
@@ -39,20 +65,38 @@
                 <h3>Project 2</h3>
                 <p>Project 2 description goes here.</p>
             </div>
+    
+            <!-- Upload Form -->
+            <div class="upload-form">
+                <h3>Upload Your Project</h3>
+                <form action="your-upload-handler-url" method="post" enctype="multipart/form-data">
+                    <label for="project-name">Project Name:</label>
+                    <input type="text" id="project-name" name="project-name" required>
+    
+                    <label for="project-description">Project Description:</label>
+                    <textarea id="project-description" name="project-description" required></textarea>
+    
+                    <label for="file-upload">Choose File:</label>
+                    <input type="file" id="file-upload" name="file-upload" required>
+    
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
         </div>
     </section>
+    
 
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
-                <label for="name">Name:</label>
+            <form action="https://formspree.io/f/xblrjrga" method="POST">
+                <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
+                <label for="message">Message:</label><br>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Send</button><br>
             </form>
         </div>
     </section>
